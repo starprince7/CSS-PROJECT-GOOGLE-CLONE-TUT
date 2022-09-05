@@ -7,30 +7,39 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 10px;
 }
 
 .links-icons {
     display: flex;
+    align-items: center;
 }
 
 .links-icons i {
     cursor: pointer;
     color: gray;
+    font-size: 19px;
+    margin-right: 8px;
 }
 
 .links-icons .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     margin-left: 12px;
     font-size: 13px;
-    background-color: darkslateblue;
+    background-color: rgb(70, 139, 61);
     color: white;
     font-weight: 600;
-    padding: 2px 6px;
+    width: 28px;
+    height: 28px;
+    /* padding: 0px 6px 1px 6px; */
     border-radius: 50%;
 }
 
 .links-text a {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     margin-right: 8px;
     color: dimgray;
@@ -38,7 +47,6 @@ body {
 
 .links-text a:hover {
     text-decoration: underline;
-    color: blue;
 }
 
 
@@ -99,6 +107,7 @@ body {
 }
 
 .button-container button {
+    cursor: pointer;
     border: none;
     padding: 10px;
     margin: 2px;
@@ -115,20 +124,29 @@ body {
 
 
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: aliceblue;
     padding: 10px 20px;
     color: dimgray;
 }
 
 footer .country {
-    border-bottom: solid 1px silver;
+    border-bottom: solid 1px rgb(218, 217, 217);
     padding-bottom: 30px; 
 }
 
 footer .copy-right {
     text-align: center;
-    padding: 5px;
+    padding: 20px 0 8px 0;
     font-size: 13px;
+}
+
+footer .copy-right:hover {
+    color: rgb(1, 121, 1);
+    cursor: pointer;
 }
 
 footer i {
